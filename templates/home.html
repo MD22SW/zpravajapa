@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block navigace %}
+<nav>
+  <ul>
+    <li style='list-style:none;text-align:center;font-family:Brush Script MT;font-size:40px;color:gold'><a href="/zprava">Zpráva pro JAPA</a></li>
+  </ul>
+</nav>
+
+{% endblock %}
+{% block hlavniobsah %}
+
+    <img src="{{ url_for('static', filename='bulldog.png') }}" alt="Bulldog" width=200 height= 200 class='center'>
+
+{% endblock %}

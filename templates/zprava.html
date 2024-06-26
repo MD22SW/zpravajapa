@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+
+{% block hlavniobsah %}
+    <style>
+        h2 {
+            color: deeppink;
+            font-family: fantasy;
+            font-size: large;
+            text-align: center
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li style='list-style:none;text-align:center;font-family:Brush Script MT;font-size:40px;color:gold'><a href="/home">Ještě jednou</a></li>
+        </ul>
+    </nav>
+
+    <h2>Jsi nejúžasnější psíčka a moc Tě miluju</h2>
+    <img src="{{ url_for('static', filename='Doxie.avif') }}" alt="Doxie" width="200" height="200">
+{% endblock %}
